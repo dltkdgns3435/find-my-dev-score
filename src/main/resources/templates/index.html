@@ -18,7 +18,6 @@
 <script type="application/javascript">
     function getGitInfo(){
         let gitId = $("#email").val()
-        alert(gitId);
         $.ajax({
             type : "get",
             url : "/score/git/"+gitId,
