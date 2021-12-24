@@ -38,8 +38,7 @@ public class GitHubCommit {
 
         this.commitInfoList = this.parseOriginalHtml(response);
     }
-    //input ex):
-    //<rect width="11" height="11" x="16" y="0" class="ContributionCalendar-day" rx="2" ry="2" data-count="0" data-date="2020-12-20" data-level="0"></rect>
+
     private List<CommitInfo> parseOriginalHtml(String response){
         return Arrays
                 .stream(response.split("\n"))
